@@ -37,3 +37,37 @@ python -m http.server
 Afterward, open a web browser and access <https://localhost:8000>.
 
 Check that yours edits formatted correctly and read well.
+
+## Tests
+
+```shell
+python -m pytest docs
+```
+...or...
+
+```shell
+coverage run -m pytest -v docs && coverage report -m
+```
+
+## Handy notes
+
+### Remove a field from the JSON
+
+In the following case, the `cuparse` key is a mistake and should have been
+`cusparse`.  The following command removes the mistake from the JSON:
+
+```shell
+jq 'walk(if type == "object" then del(.cuparse) else . end)' < data.json > x
+```
+
+### View a container for a release
+
+```shell
+jq '.["nvcr.io/nvidia/merlin/merlin-inference"]["22.03"]' < ../docs/source/data.json
+```
+
+### List the containers and releases
+
+```shell
+jq '. | map_values(keys) ' < docs/source/data.json
+```

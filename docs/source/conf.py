@@ -15,7 +15,7 @@ gitdir = os.path.join(repodir, r".git")
 # -- Project information -----------------------------------------------------
 
 project = "Merlin"
-copyright = "2022, NVIDIA"
+copyright = "2022, NVIDIA"  # pylint: disable=redefined-builtin
 author = "NVIDIA"
 
 # -- General configuration ---------------------------------------------------

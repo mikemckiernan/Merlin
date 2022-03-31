@@ -45,6 +45,9 @@ jobs:
       #  run: |
       #    python -m pytest -rxs tests/unit/
       # Build docs, TODO: treat warnings as errors, SPHINXOPTS="-W -q"
+      - name: Generate SMX table snippets
+        run: |
+          python docs/smx2rst.py
       - name: Building docs
         run: |
           make -C docs html

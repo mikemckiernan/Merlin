@@ -30,6 +30,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip setuptools==59.4.0 wheel
           python -m pip install -r docs/requirements-doc.txt
+      - name: Generate SMX table snippets
+        run: |
+          python docs/smx2rst.py
       - name: Report the versions to build
         run: |
           sphinx-multiversion --dump-metadata docs/source docs/build/html | jq "keys"
