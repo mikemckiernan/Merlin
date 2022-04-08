@@ -4,7 +4,7 @@ We have created a collection of Jupyter example notebooks based on different dat
 
 ## Inventory
 
-### 1. [Deploying multi stage RecSys](https://github.com/NVIDIA-Merlin/Merlin/tree/main/examples/Deploying-multi-stage-RecSys)
+### 1. [Deploying multi stage RecSys](./Deploying-multi-stage-RecSys)
 
 Recommender system pipelines are often based on multiple stages: Retrievel, Filtering, Scoring and Ordering. This example provides an end-to-end pipelines leveraging the Merlin framework by
 - Processing the dataset using NVTabular
@@ -13,7 +13,7 @@ Recommender system pipelines are often based on multiple stages: Retrievel, Filt
 - Building a feature store with feast and ANN index with fiass
 - Deploying an end-to-end pipeline of retrieval, scoring, ANN search to Triton Inference Server with Merlin Models 
 
-### 2. [Getting Started with MovieLens](https://github.com/NVIDIA-Merlin/Merlin/tree/main/examples/getting-started-movielens)
+### 2. [Getting Started with MovieLens](./getting-started-movielens)
 
 The MovieLens25M is a popular dataset for recommender systems and is used in academic publications. Most users are familiar with this dataset, so we're focusing primarily on the basic concepts of NVTabular, which includes:
 - Learning NVTabular to GPU-accelerate ETL (Preprocess and Feature Engineering)
@@ -22,7 +22,7 @@ The MovieLens25M is a popular dataset for recommender systems and is used in aca
 - Using the NVTabular dataloader with the TensorFlow Keras model
 - Using the NVTabular dataloader with PyTorch
 
-### 3. [Scaling Large Datasets with Criteo](https://github.com/NVIDIA-Merlin/Merlin/tree/main/examples/scaling-criteo)
+### 3. [Scaling Large Datasets with Criteo](./scaling-criteo)
 
 [Criteo](https://ailab.criteo.com/download-criteo-1tb-click-logs-dataset/) provides the largest publicly available dataset for recommender systems with a size of 1TB of uncompressed click logs that contain 4 billion examples. We demonstrate how to scale NVTabular, as well as:
 - Use multiple GPUs and nodes with NVTabular for ETL
@@ -38,7 +38,7 @@ You can run the examples with Docker containers. Docker containers are available
 Depending on which example you want to run, you should use any one of these Docker containers:
 - [Merlin-Training](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/merlin/containers/merlin-training) (contains Merlin Core, Merlin Models, Merlin Systems, NVTabular and HugeCTR)
 - [Merlin-PyTorch-Training](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/merlin/containers/merlin-pytorch-inference) (contains Merlin Core, Merlin Models, Merlin Systems, NVTabular and PyTorch)
-- [Merlin-Tensorflow-Training] (https://catalog.ngc.nvidia.com/orgs/nvidia/teams/merlin/containers/merlin-tensorflow-training)  (contains Merlin Core, Merlin Models, Merlin Systems, NVTabular and TensorFlow)
+- [Merlin-Tensorflow-Training](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/merlin/containers/merlin-tensorflow-training)  (contains Merlin Core, Merlin Models, Merlin Systems, NVTabular and TensorFlow)
 - [Merlin-Tensorflow-Inference](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/merlin/containers/merlin-tensorflow-inference)_ (contains Merlin Core, Merlin Models, Merlin Systems, NVTabular, TensorFlow and Triton Inference Server)
 - [Merlin-Inference](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/merlin/containers/merlin-inference) (contains Merlin Core, Merlin Models, Merlin Systems, NVTabular, TensorFlow, PyTorch, HugeCTR and Triton Inference Server)
 

@@ -1,17 +1,9 @@
 Merlin
 ======
 
-.. toctree::
-   :maxdepth: 2
+NVIDIA Merlin is an open source library that accelerates recommender
+systems on NVIDIA GPUs.
+The library brings together several component libraries that simplifies
+the process of building high-performing recommenders at scale.
 
-   Introduction <README.md>
-   Example Notebooks <examples/index>
-   Merlin Containers <containers>
-   Support Matrix <support_matrix/index>
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+For more information, see the `Introduction <README.html>`_.
