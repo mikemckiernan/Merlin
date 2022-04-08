@@ -1,0 +1,40 @@
+root: index
+entries:
+- file: README.md
+  title: Introduction
+- file: examples/README.md
+  subtrees:
+  - entries:
+    - file: examples/getting-started-movielens/README.md
+      entries:
+      - file: examples/getting-started-movielens/01-Download-Convert.ipynb
+      - file: examples/getting-started-movielens/02-ETL-with-NVTabular.ipynb
+      - file: examples/getting-started-movielens/03-Training-with-HugeCTR.ipynb
+      - file: examples/getting-started-movielens/03-Training-with-TF.ipynb
+      - file: examples/getting-started-movielens/03-Training-with-PyTorch.ipynb
+      - file: examples/getting-started-movielens/04-Triton-Inference-with-HugeCTR.ipynb
+      - file: examples/getting-started-movielens/04-Triton-Inference-with-TF.ipynb
+    - file: examples/Deploying-multi-stage-RecSys/README.md
+      entries:
+      - file: examples/Deploying-multi-stage-RecSys/01-Building-Recommender-Systems-with-Merlin.ipynb
+      - file: examples/Deploying-multi-stage-RecSys/02-Deploying-multi-stage-RecSys-with-Merlin-Systems.ipynb
+    - file: examples/scaling-criteo/README.md
+      subtrees:
+      - titlesonly: True
+        entries:
+        - file: examples/scaling-criteo/01-Download-Convert.ipynb
+        - file: examples/scaling-criteo/02-ETL-with-NVTabular.ipynb
+        - file: examples/scaling-criteo/03-Training-with-FastAI.ipynb
+        - file: examples/scaling-criteo/03-Training-with-HugeCTR.ipynb
+        - file: examples/scaling-criteo/03-Training-with-TF.ipynb
+        - file: examples/scaling-criteo/04-Triton-Inference-with-HugeCTR.ipynb
+        - file: examples/scaling-criteo/04-Triton-Inference-with-TF.ipynb
+- file: containers
+- file: support_matrix/index.rst
+  entries:
+  - file: support_matrix/support_matrix_merlin_inference
+  - file: support_matrix/support_matrix_merlin_pytorch_inference
+  - file: support_matrix/support_matrix_merlin_pytorch_training
+  - file: support_matrix/support_matrix_merlin_tensorflow_inference
+  - file: support_matrix/support_matrix_merlin_tensorflow_training
+  - file: support_matrix/support_matrix_merlin_training

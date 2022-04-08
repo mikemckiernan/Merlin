@@ -6,7 +6,6 @@ import subprocess
 import sys
 
 from natsort import natsorted
-from recommonmark.parser import CommonMarkParser
 
 docs_dir = os.path.dirname(__file__)
 repodir = os.path.abspath(os.path.join(__file__, r"../../.."))
@@ -24,9 +23,9 @@ author = "NVIDIA"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "myst_parser",
     "sphinx_multiversion",
     "sphinx_rtd_theme",
-    "recommonmark",
     "sphinx_markdown_tables",
     "nbsphinx",
     "sphinx.ext.autodoc",
@@ -35,6 +34,7 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx.ext.viewcode",
     "sphinx.ext.intersphinx",
+    "sphinx_external_toc",
 ]
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -57,6 +57,7 @@ exclude_patterns = []
 #
 html_theme = "sphinx_rtd_theme"
 html_show_sourcelink = False
+external_toc_path = "toc.yaml"
 
 # Whitelist pattern for tags (set to None to ignore all tags)
 # Determine if Sphinx is reading conf.py from the checked out
@@ -81,7 +82,6 @@ html_sidebars = {"**": ["versions.html"]}
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 
-source_parsers = {".md": CommonMarkParser}
 source_suffix = [".rst", ".md"]
 
 nbsphinx_allow_errors = True

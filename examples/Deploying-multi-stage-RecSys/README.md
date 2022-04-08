@@ -1,4 +1,4 @@
-# NVIDIA Merlin Example Notebooks
+# Deploying a Multi-Stage Recommender System
 
 We created two jupyter notebook examples based on different stages of a Recommender Systems to demonstrate how to deploy a multi-stage Recommender Systems on Triton Inference Server. The notebooks demonstrate how to use NVTabular, Merlin Models and Merlin Systems libraries for ETL, training, and inference, respectively.
 

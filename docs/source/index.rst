@@ -1,13 +1,9 @@
 Merlin
 ======
 
-.. toctree::
-   :maxdepth: 2
+Merlin ...
 
-   Introduction <README.md>
-   Example Notebooks <examples/index>
-   Merlin Containers <containers>
-   Support Matrix <support_matrix/index>
+For more information, see the `Introduction <README.md>`_.
 
 Indices and tables
 ==================
