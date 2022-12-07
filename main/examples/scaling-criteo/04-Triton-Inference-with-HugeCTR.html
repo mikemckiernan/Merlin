@@ -54,10 +54,9 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../README.html">Introduction</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Example Notebooks</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../index.html#inventory">Inventory</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../index.html#running-the-example-notebooks">Running the Example Notebooks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../getting-started-movielens/index.html">Getting Started using the MovieLens Dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Building-and-deploying-multi-stage-RecSys/index.html">Deploying a Multi-Stage Recommender System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sagemaker-tensorflow/index.html">Merlin and AWS SageMaker</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Scaling Large Datasets with Criteo</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="01-Download-Convert.html">Criteo Download and Convert</a></li>
 <li class="toctree-l3"><a class="reference internal" href="02-ETL-with-NVTabular.html">Feature Engineering with NVTabular</a></li>
@@ -125,7 +124,7 @@
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline"></a></h2>
 <p>The last step is to deploy the ETL workflow and saved model to production. In the production setting, we want to transform the input data as during training (ETL). We need to apply the same mean/std for continuous features and use the same categorical mapping to convert the categories to continuous integer before we use the deep learning model for a prediction. Therefore, we deploy the NVTabular workflow with the HugeCTR model as an ensemble model to Triton Inference. The ensemble model guarantees that the same transformation are applied to the raw inputs.</p>
-<a class="reference internal image-reference" href="../../_images/triton-hugectr.png"><img alt="../../_images/triton-hugectr.png" src="../../_images/triton-hugectr.png" style="width: 25%;" /></a>
+<a class="reference internal image-reference" href="../../_images/triton-hugectr1.png"><img alt="../../_images/triton-hugectr1.png" src="../../_images/triton-hugectr1.png" style="width: 25%;" /></a>
 <div class="section" id="learning-objectives">
 <h3>Learning objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline"></a></h3>
 <p>In this notebook, we learn how to deploy our models to production:</p>
