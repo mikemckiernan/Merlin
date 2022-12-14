@@ -23,7 +23,6 @@ author = "NVIDIA"
 extensions = [
     "myst_nb",
     "sphinx_multiversion",
-    "sphinx_rtd_theme",
     "sphinx.ext.autodoc",
     "sphinx.ext.coverage",
     "sphinx.ext.githubpages",
@@ -31,6 +30,8 @@ extensions = [
     "sphinx.ext.viewcode",
     "sphinx.ext.intersphinx",
     "sphinx_external_toc",
+    "sphinx_design",
+    "sphinxcontrib.mermaid",
     "sphinxcontrib.copydirs",
 ]
 
@@ -42,6 +43,7 @@ myst_enable_extensions = [
     "linkify",
     "replacements",
     "tasklist",
+    "colon_fence",
 ]
 myst_linkify_fuzzy_links = False
 myst_heading_anchors = 3
@@ -69,13 +71,15 @@ exclude_patterns = ["examples/legacy"]
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "sphinx_rtd_theme"
+html_theme = "sphinx_book_theme"
 html_theme_options = {
     "titles_only": True,
     "analytics_id": "G-NVJ1Y1YJHK",
+    "home_page_in_toc": True,
 }
 html_copy_source = False
 html_show_sourcelink = False
+html_show_sphinx = False
 
 # Whitelist pattern for tags (set to None to ignore all tags)
 # Determine if Sphinx is reading conf.py from the checked out
@@ -97,7 +101,7 @@ smv_branch_whitelist = "^main$"
 
 smv_refs_override_suffix = "-docs"
 
-html_sidebars = {"**": ["versions.html"]}
+# html_sidebars = {"**": ["versions.html"]}
 html_baseurl = "https://nvidia-merlin.github.io/Merlin/main"
 
 # Add any paths that contain custom static files (such as style sheets) here,
